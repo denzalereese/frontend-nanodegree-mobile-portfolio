@@ -439,7 +439,7 @@ var resizePizzas = function(size) {
     }
 
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth + '%';
+      requestAnimationFrame(document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth + '%');
     }
   }
 
