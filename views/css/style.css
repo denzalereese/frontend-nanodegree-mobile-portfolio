@@ -30,6 +30,9 @@ form {
 }
 
 .mover {
+  /*enables hardware accelerated CSS*/
+  transform: translateZ(0);
+  backface-visibility: hidden;
   position: fixed;
   width: 256px;
   z-index: -1;

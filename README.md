@@ -19,7 +19,8 @@ To open the project, open index.html in the browser. Click on the "Cam's Pizzeri
   <li>Refactored "document.querySeclector" calls to faster "document.getElementById"</li>
   <li>Used local variables for array lengths in loop condition statements</li>
   <li>Declared phase and elem variables in loop initialization, rather than creating them on every iteration inside their loops</li>
-  <li>Moved pizzasDiv and movingPizzas1 variable declaration outside of loops</lI>
+  <li>Moved pizzasDiv and movingPizzas1 variable declaration outside of loops</li>
+  <li>enabled hardware accelerated CSS to .mover selector</li>
   <li>Reduced number of sliding pizzas in DOMContentLoaded listener</li>
   <li>Removed forced synchronous layout from updatePositions function</li>
   <li>Use transform CSS property and translateX to animate sliding pizzas in updatePositions function</li>
