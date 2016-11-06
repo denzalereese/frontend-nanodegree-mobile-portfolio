@@ -31,7 +31,9 @@ form {
 
 .mover {
   /*enables hardware accelerated CSS*/
+  -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: fixed;
   width: 256px;
