@@ -519,8 +519,8 @@ function updatePositions() {
     for (var i = 0, phase; itemsLength; i++) {
         phase = Math.sin(updatedTop + (i % 5));
         //updates transform CSS property with X-axis translation
-        var basicLeft = -items[i].basicLeft + 1000 * phase + 'px';
-        var translation = "translateX(" + basicLeft + ")";
+      //  var basicLeft = -items[i].basicLeft + 1000 * phase + 'px';
+        var translation = 'translateX(' + 100 * phase + 'px)';
         items[i].style.transform = translation;
     }
 
@@ -543,8 +543,10 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 20; i++) {
-        var elem = document.createElement('img');
+    //reduced number of pizzas to 32
+    //declare var elem in loop init rather than inside loop
+    for (var i = 0, elem; i < 32; i++) {
+        elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza.png";
         elem.style.height = "100px";
