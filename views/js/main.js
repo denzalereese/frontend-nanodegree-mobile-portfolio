@@ -492,7 +492,7 @@ function updatePositions() {
   var updatedTop = document.body.scrollTop / 1250;
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin( updatedTop + (i % 5));
-    //items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    //updates transform CSS property with X-axis translation
     var basicLeft = -items[i].basicLeft + 1000 * phase + 'px';
     var translation = "translateX("+basicLeft+")";
     items[i].style.transform = translation;
