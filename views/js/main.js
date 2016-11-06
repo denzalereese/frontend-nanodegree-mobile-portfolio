@@ -458,8 +458,10 @@ var resizePizzas = function(size) {
                 console.log("bug in sizeSwitcher");
         }
 
-        for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-            requestAnimationFrame(document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth + '%');
+        var numRandomPizzas = document.querySelectorAll(".randomPizzaContainer").length;
+        //use local variable for array length rather than checking value at each iteration
+        for (var i = 0; i < numRandomPizzas; i++) {
+            document.querySelectorAll(".randomPizzaContainer")[i].style.width = newWidth + '%';
         }
     }
 
@@ -509,8 +511,10 @@ function updatePositions() {
     window.performance.mark("mark_start_frame");
 
     var items = document.querySelectorAll('.mover');
+    var itemsLength = items.length;
     var updatedTop = document.body.scrollTop / 1250;
-    for (var i = 0; i < items.length; i++) {
+    //use local variable for array length rather than checking value at each iteration
+    for (var i = 0; itemsLength; i++) {
         var phase = Math.sin(updatedTop + (i % 5));
         //updates transform CSS property with X-axis translation
         var basicLeft = -items[i].basicLeft + 1000 * phase + 'px';

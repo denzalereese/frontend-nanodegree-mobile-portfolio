@@ -17,6 +17,7 @@ To open the project, open index.html in the browser. Click on the "Cam's Pizzeri
 ###views/js/main.js
 <ul>
   <li>Refactored "document.querySeclector" calls to faster "document.getElementById"</li>
+  <li>Used local variables for array lengths in loop condition statements</li>
   <li>Reduced number of sliding pizzas in DOMContentLoaded listener</li>
   <li>Removed forced synchronous layout from updatePositions function</li>
   <li>Use transform CSS property and translateX to animate sliding pizzas in updatePositions function</li>
