@@ -5,6 +5,8 @@ I also made optimizations to views/js/main.js to make views/pizza.html render co
 
 Lastly, I optimized the pizza resize slider so that time to resize is under 5ms
 
+To open the project, open index.html in the browser. Click on the "Cam's Pizzeria" link to view the optimizations there
+
 ###index.html
 <ul>
   <li>Minified html</li>
