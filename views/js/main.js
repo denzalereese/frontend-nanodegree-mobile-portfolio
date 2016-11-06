@@ -516,7 +516,7 @@ function updatePositions() {
     var updatedTop = document.body.scrollTop / 1250;
     //use local variable for array length rather than checking value at each iteration
     //create var phase in loop initialization, rather than inside the loop
-    for (var i = 0, phase; itemsLength; i++) {
+    for (var i = 0, phase; i < itemsLength; i++) {
         phase = Math.sin(updatedTop + (i % 5));
         //updates transform CSS property with X-axis translation
         var translation = 'translateX(' + 100 * phase + 'px)';
